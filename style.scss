@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(191, 199, 214);
+    text-align: center;
+
+    .watch{
+        background: whitesmoke;
+        width: 50%;
+        padding: 10%;
+        border-radius: 6%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+button{
+    padding: 5%;
+    margin: 2%;
+    border-radius: 30%;
+    outline: none;
+    background: linear-gradient(to right, white, rgb(231, 231, 231),rgb(168, 168, 168), rgb(128, 128, 128));
+
+}

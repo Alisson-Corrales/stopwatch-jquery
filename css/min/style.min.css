@@ -1,0 +1,2 @@
+*,*::after,*::before{margin:0;padding:0}body{background:#bfc7d6;text-align:center}body .watch{background:whitesmoke;width:50%;padding:10%;border-radius:6%;margin-left:15%;margin-right:15%}button{padding:5%;margin:2%;border-radius:30%;outline:none;background:-webkit-gradient(linear, left top, right top, from(white), color-stop(#e7e7e7), color-stop(#a8a8a8), to(gray));background:linear-gradient(to right, white, #e7e7e7, #a8a8a8, gray)}
+/*# sourceMappingURL=style.min.css.map */
