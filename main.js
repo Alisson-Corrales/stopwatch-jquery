@@ -22,14 +22,21 @@ $(function(){
         timer = setInterval(function(){
             ms++
             $('#ms').html(ms);
+
+            //for seconds
             if(ms == 100){
                 s++
-                ms = 0
                 $('#s').html(s);
+                //if(s < 10){
+                //    $('#s').html('0' + s)
+                //}
+                //for minutes
                 if(s == 60){
                     m++
-                    s = 0;
                     $('#m').html(m);
+                //    if(m < 10){
+                //        $('#m').html('0' + m)
+                //    }
                 }
             }
 
@@ -59,15 +66,21 @@ $(function(){
         let lapCount = setInterval(function(){
             $('#lap').css('display', `initial`);
 
-            //the janky part. the idea was for it to take the m, s, and ms and just copy
-            if(isRunning == true){
-                m3 = m;
-                $('#m3').html()
-                s2 = s;
-                ms1 = ms;
+            //it works. but it doesn't stop
+            $('#m3').html(m)
+            $('#s2').html(s)
+            $('#ms1').html(ms)
+            
+            //wasn't sure how to make it to where it resets with the lap button
+            if(isRunning == false){
+                $('#lap').css('display', `none`);
+
+                m = 0;
+                s = 0;
+                ms = 0;
             }
-        })
-    };
+    });
+    }
 
 
     $buttonStart.on('click', onOff)
