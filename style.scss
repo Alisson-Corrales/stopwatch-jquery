@@ -8,22 +8,36 @@
 body{
     background: rgb(191, 199, 214);
     text-align: center;
+    font-size: 3rem;
 
     .watch{
-        background: whitesmoke;
-        width: 50%;
+        display: none;
+        background: rgb(248, 247, 238);
+        width: 40%;
         padding: 10%;
         border-radius: 6%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-top: 2%;
+        margin-left: 22%;
+        margin-right: 22%;
+        box-shadow: 20px 10px 15px rgb(92, 94, 97);
     }
+
+    #lap{
+        display: none;
+        font-size: 2rem;
+    }
+
 }
 
 button{
-    padding: 5%;
+    padding: 2%;
     margin: 2%;
     border-radius: 30%;
     outline: none;
-    background: linear-gradient(to right, white, rgb(231, 231, 231),rgb(168, 168, 168), rgb(128, 128, 128));
+    background: linear-gradient(to right, rgb(248, 247, 238), rgb(231, 230, 226),rgb(168, 167, 164), rgb(131, 130, 128));
+
+    &:active{
+        background: linear-gradient(to right, rgb(131, 130, 128), rgb(168, 167, 164), rgb(231, 230, 226));
+    }
 
 }

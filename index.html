@@ -8,19 +8,33 @@
 </head>
 <body>
     <div class="watch">
-        <img src='https://publicdomainvectors.org/photos/1382211156.png' height="80" width="80">
+        <img src='https://publicdomainvectors.org/photos/1382211156.png' height="100" width="100">
 
         <div class="text">
-            <div id="time">00:00:00</div>
+            <div id="time">
+                <!--seperate measures of time makes it easier to control-->
+                <span id="m">00</span>
+                :
+                <span id="s">00</span> 
+                :
+                <span id="ms">00</span> 
+            </div>
             <br>
-            <div id="lap">00:00:00</div>
+            <div id="lap">
+                <span id="m3">00</span>
+                :
+                <span id="s2">00</span> 
+                :
+                <span id="ms1">00</span> 
+            </div>
         </div>
 
-        <button id='stopWatch'>Stop</button>
-        <button id=''>Lap</button>
+        <button id='startWatch'>Start</button>
+        <button id='lapCount'>Lap</button>
 
-        <script src=""></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
     </div>
 </body>
 </html>
