@@ -12,7 +12,6 @@ body {
 }
 
 body .watch {
-  display: none;
   background: #f8f7ee;
   width: 40%;
   padding: 10%;
