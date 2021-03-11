@@ -1,9 +1,10 @@
 `use strict`;
 
 
-$(function(){
 
-    //$('.watch').slideDown(800);
+$(function(){
+    //$('#stopwatch').css('display', 'none')
+    //$('#stopwatch').toggle(1000);
 
     let timer;
     let isRunning = false;
@@ -24,19 +25,22 @@ $(function(){
             $('#ms').html(ms);
 
             //for seconds
-            if(ms == 100){
+            if(ms >= 100 ){
                 s++
                 $('#s').html(s);
-                if(s < 100){
-                    $('#s').html('0' + s)
-                }
-                //for minutes
-                if(s == 60){
-                    m++
-                    $('#m').html(m);
+                $('#ms').html(0);
+                ms = 0;
                     if(m < 10){
                         $('#m').html('0' + m)
                     }
+                //for minutes
+                if(s >= 60){
+                    m++
+                    s = 0;
+                    $('#m').html(m);
+                    //if(m < 10){
+                    //    $('#m').html('0' + m)
+                    //}
                 }
             }
 
@@ -61,31 +65,36 @@ $(function(){
     let s2 = $('#s2')
     let ms1 = $('#ms1');
 
+
     //prints out time when you click the lap button
     function lapWatch(){
-        lapCount = setInterval(function(){
+            let tempms = ms;
+            let tempseconds = s;
+            let tempminutes = m;
             $('#lap').css('display', `initial`);
 
-            //it works. but it doesn't stop
-            $('#m3').html(m) //minutes
-            $('#s2').html(s) //seconds
-            $('#ms1').html(ms) //milliseconds
+            //displays static number of the stopwatch (does not)
+            $('#m3').html(tempminutes) //minutes
+            $('#s2').html(tempseconds) //seconds
+            $('#ms1').html(tempms) //milliseconds
             
-            //wasn't sure how to make it to where it resets with the lap button
+            //restarts stopwatch 100% when its not running
             if(isRunning == false){
-                $('#lap').css('display', `none`);
+                $('#ms').html('00');
+                $('#s').html('00');
+                $('#m').html('00');
+                ms = 0;
+                s = 0;
+                m = 0;
 
-                m = 00;
-                s = 00;
-                ms = 00;
+                clearInterval(lapCount)
+
+                $('#lap').css('display',"none");
             }
-    });
     }
 
 
     $buttonStart.on('click', onOff)
     $buttonLap.on('click', lapWatch)
-
-
 
 })
