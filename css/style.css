@@ -6,13 +6,13 @@
 }
 
 body {
-  background: #bfc7d6;
+  background: #bfd6c6;
   text-align: center;
   font-size: 3rem;
 }
 
 body .watch {
-  background: #f8f7ee;
+  background: #faf1e4;
   width: 40%;
   padding: 10%;
   border-radius: 6%;
@@ -33,12 +33,12 @@ button {
   margin: 2%;
   border-radius: 30%;
   outline: none;
-  background: -webkit-gradient(linear, left top, right top, from(#f8f7ee), color-stop(#e7e6e2), color-stop(#a8a7a4), to(#838280));
-  background: linear-gradient(to right, #f8f7ee, #e7e6e2, #a8a7a4, #838280);
+  background: -webkit-gradient(linear, left top, right top, from(#bbf5dd), color-stop(#a6ebce), color-stop(#7fbd99), to(#6a9b7f));
+  background: linear-gradient(to right, #bbf5dd, #a6ebce, #7fbd99, #6a9b7f);
 }
 
 button:active {
-  background: -webkit-gradient(linear, left top, right top, from(#838280), color-stop(#a8a7a4), to(#e7e6e2));
-  background: linear-gradient(to right, #838280, #a8a7a4, #e7e6e2);
+  background: -webkit-gradient(linear, left top, right top, from(#6a9b7f), color-stop(#7fbd99), to(#a6ebce));
+  background: linear-gradient(to right, #6a9b7f, #7fbd99, #a6ebce);
 }
 /*# sourceMappingURL=style.css.map */

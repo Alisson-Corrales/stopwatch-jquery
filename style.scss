@@ -6,13 +6,13 @@
 }
 
 body{
-    background: rgb(191, 199, 214);
+    background: rgb(191, 214, 198);
     text-align: center;
     font-size: 3rem;
 
     .watch{
         //display: none;
-        background: rgb(248, 247, 238);
+        background: rgb(250, 241, 228);
         width: 40%;
         padding: 10%;
         border-radius: 6%;
@@ -34,10 +34,10 @@ button{
     margin: 2%;
     border-radius: 30%;
     outline: none;
-    background: linear-gradient(to right, rgb(248, 247, 238), rgb(231, 230, 226),rgb(168, 167, 164), rgb(131, 130, 128));
+    background: linear-gradient(to right, rgb(187, 245, 221), rgb(166, 235, 206),rgb(127, 189, 153), rgb(106, 155, 127));
 
     &:active{
-        background: linear-gradient(to right, rgb(131, 130, 128), rgb(168, 167, 164), rgb(231, 230, 226));
+        background: linear-gradient(to right, rgb(106, 155, 127), rgb(127, 189, 153), rgb(166, 235, 206));
     }
 
 }
